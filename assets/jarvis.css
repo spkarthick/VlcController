@@ -1,0 +1,457 @@
+@font-face
+{
+font-family: icomoon;
+src: url(fonts/icomoon.woff) format('woff'),
+	url(fonts/icomoon.ttf) format('truetype');
+}
+
+#mainpage
+{
+
+}
+#powerscreen
+{
+	
+}
+.powertext
+{
+	width:90%;
+	margin:20px 10px;
+	font-size:20px;
+	text-align:center;
+	text-shadow:none;
+}
+.powerbutton
+{
+	width:128px;
+	margin:10% auto;
+	height:128px;
+	background:url("images/server.png");
+	-webkit-transition:500ms;
+}
+.powerbutton:hover
+{
+	background:#00FF00;
+}
+
+.header
+{
+height:52px;
+overflow:hidden;
+}
+
+.headerinner
+{
+-webkit-transition:all 500ms;
+}
+
+.headerinner a
+{
+color:#333;
+text-decoration:none;
+}
+
+.titleimg
+{
+	width:50px;
+	height:50px;
+	display:table;
+	margin:auto;
+}
+
+.titleimg:before
+{
+	content: "\e62c";
+	font-family:icomoon;
+    font-size: 50px;
+	font-weight:normal;
+	position:absolute;
+    line-height: 50px;
+}
+
+/* Footer */
+
+.mediaart
+{
+	height:80px;
+	width:80px;
+	float:left;
+	background:#EAEAEA;
+}
+.mediaart img
+{
+	margin:0px;
+	width:80px;
+	height:80px;
+}
+
+#mediaplayer
+{
+	height:80px;
+	padding:5px;
+}
+
+.playercontrols
+{
+	padding:15px 0px;
+}
+
+.controlsinner
+{
+	height:100%;
+	width:100%;
+}
+
+.controlsdiv
+{
+	display:table;
+	margin:auto;
+}
+
+.play,.next,.prev,.stop,.playlisticon,.searchicon
+{
+	width:40px;
+	height:40px;
+	display:table-cell;
+	padding:0px 5px;
+}
+.play,.next,.prev,.stop
+{
+width:80px;
+}
+
+.fullscreenicon:before ,.playlisticon:before,.searchicon:before,.addicon:before,.playicon:before
+{
+	font-family:icomoon;
+    font-size: 30px;
+	font-weight:normal;
+	position:absolute;
+    line-height: 40px;
+}
+.play:before,.next:before,.prev:before,.stop:before
+{
+	font-family:icomoon;
+	font-size: 30px;
+	font-weight:normal;
+	line-height: 40px;
+	display:table;
+	margin:auto;
+}
+
+.fullscreenicon
+{
+height:20px;
+width:20px;
+}
+
+.addicon:before
+{
+	content:'\e631';
+}
+
+.play:before,.playicon:before
+{
+	content: "\e614";
+}
+
+.stop:before
+{
+	content: "\e616";
+}
+
+.next:before
+{
+	content: "\e61c";
+}
+
+.prev:before
+{
+	content: "\e61b";
+}
+
+.play.pause:before
+{
+	content: "\e615";
+}
+
+#seekbar
+{
+	display:none;
+}
+
+.seektime
+{
+	width:50px;
+	height:30px;
+	text-align:center;
+	line-height:30px;
+	float:left;
+	font-size:18px;
+	font-weight:normal;
+}
+
+#mediaplayer .songname , .artistdetails
+{
+	margin-left:80px;
+	padding:0px 10px;
+	margin-top:5px;
+}
+
+#mediaplayer .songname
+{
+	font-size:18px;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+}
+.artistdetails
+{
+	font-size:15px;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	font-weight:normal;
+}
+.seekbarwrapper .ui-slider-track
+{
+	margin-left:60px;
+}
+
+#playlistlist
+{
+	margin-top:28px;
+	overflow: auto;
+	height: 500px;
+}
+
+.seekbarwrapper .ui-slider-bg.ui-btn-active
+{
+	background-color:#141414;
+}
+
+.playlisticon
+{
+display:block;
+}
+
+.playlisticon:before
+{
+	content:'\e62e';
+	position:relative;
+}
+
+.searchicon:before
+{
+	content:'\e62d';
+	position:relative;
+}
+
+.searchbar
+{
+	display:table;
+	margin:auto;
+	width:90%;	
+	padding:5px;
+}
+
+.searchbar .ui-input-text
+{
+	width:50%;
+	display:inline-block;
+}
+
+.searchbar .ui-input-btn
+{
+	width:30%;
+	display:inline-block;
+	margin-left:10px;
+}
+.hide
+{
+	display:none;
+}
+
+.music.list
+{
+	margin-top:15px;
+}
+
+.music.list.adjustview
+{
+	margin-top:70px;
+}
+
+.dirwrapper
+{
+	width:26%;
+	height:130px;
+	float:left;
+	margin:10px;
+	position:relative;
+}
+
+.itemactive .addicon,.itemactive .playicon
+{
+	display:block;
+}
+
+.addicon,.playicon
+{
+	display:none;
+}
+
+.directorylist
+{
+	display: table;
+	margin: 20px auto;
+	padding:1%;
+}
+
+.directoryfile,.directoryfolder
+{
+	width:80px;
+	height:80px;
+	display:table;
+	margin:auto;
+}
+
+.directoryfile:before,.directoryfolder:before
+{
+	font-family:icomoon;
+    	font-size: 30px;
+	margin:0px 25px;
+	font-weight:normal;
+	position:absolute;
+    	line-height: 80px;
+	top:10px;
+	text-align:center;
+	text-shadow:none;
+}
+
+.directoryfile:before
+{
+	content:'\e62f';
+}
+#playtools
+{
+	height:50px;
+}
+.playtools
+{
+	display:table;
+	table-layout:fixed;
+	margin:6px auto
+}
+.playtools li
+{
+	display:inline-block;
+	float:left;
+	border:none;
+}
+.playtools li a
+{
+	width:50px;
+	border:1px solid #FFFFFF!important;
+}
+.playtools a.noborder
+{
+	border-left:none!important;
+	border-right:none!important;
+}
+.directoryfolder:before
+{
+	content:'\e630';
+}
+.fullscreenicon:before
+{
+	content:'\e60f';
+	left:8px;
+	top:0px;
+}
+.dirname
+{
+	width:100%;
+	word-wrap:break-word;
+	height:30px;
+	text-align:center;
+}
+
+.addicon
+{
+	position:absolute;
+	left:10px;
+	height:20px;
+	text-shadow:none;
+	width:20px;
+	font-size:20px;
+}
+
+.playicon
+{
+	position:absolute;
+	right:0px;
+	height:20px;
+	text-shadow:none;
+	width:20px;
+	font-size:20px;
+}
+.addicon:before, .playicon:before
+{
+	height:20px;
+	font-size:20px;
+	line-height:20px;
+	width:20px;
+}
+#playlistlist *
+{
+	-webkit-user-select:none;
+	user-select:none;
+	-moz-user-select: none;
+  -ms-user-select: none;
+  text-shadow:none;
+}
+#playlistlist .active
+{
+	background:rgba(14,14,14,0.4);
+}
+
+#playlistlist .currentitem
+{
+	background:rgb(14,14,14);
+	color:#FFFFFF;
+}
+
+#switcher
+{
+position:relative;
+top:15px;
+margin:auto;
+display:table;
+}
+#intropage
+{
+background:url("https://dl.dropboxusercontent.com/u/59628347/images/bgintro.jpg") no-repeat 100% 100%;
+}
+.mediaart.emptyart:before
+{
+	position:absolute;
+	font-family:'icomoon';
+	content:'\e62c';
+	font-weight:normal;
+	top: 7px;
+	left: 14px;
+	font-size: 60px;
+	text-shadow:none;
+	opacity:0.4;
+}
+.seekfooter
+{
+	padding:10px 5px;
+}
+img.coverpage
+{
+	width:100%;
+	position: absolute;
+	top: 0px;
+	height:100%;
+}

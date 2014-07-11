@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width"/>
+<link rel="stylesheet" type="text/css" href="jquery.mobile-1.4.2.min.css">
+<link rel="stylesheet" type="text/css" href="jarvis.css">
+<script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="jquery.mobile-1.4.2.min.js"></script>
+<script type="text/javascript" src="jarvis.js"></script>
+</head>
+<body>
+<div data-role="page" id="powerscreen">
+	<div class="powerproblem" style="display:none;">
+	<div class="powerbutton"></div>
+		<div class="powertext">The Media Server appears to be Offline.. Please restart the app if It's turned ON</div>
+	</div>
+</div>
+<div data-role="page" id="mainpage">
+<div class="header" data-role="header" data-tap-toggle="false" data-position="fixed">
+<div class="headerinner">
+<a href="#playlist" onclick="getPlaylist()" class="playlisticon ui-btn-left"></a>
+<div class="titleimg"></div>
+</div>
+<a href="#fullscreen" onclick="setFullscreen()" class="fullscreenicon ui-btn-right"></a>
+</div><div data-role="controlgroup" id="switcher" data-type="horizontal">
+<a href="#" data-role="button" onclick="getAudioFiles()">Audio</a>
+<a href="#" data-role="button" onclick="getVideoFiles()">Video</a>
+</div>
+<div data-role="panel" data-swipe-close="false" data-position-fixed="true" data-display="overlay" id="playlist">
+    <div data-role="header" data-tap-toggle="false" data-position="fixed">
+	<a href="#clearplaylist" onclick="clearPlaylist()" class="ui-btn-right">Clear</a>
+	<h2>Playlist</h2>
+	<a href="#removeplaylist" onclick="removePlaylist()" class="ui-btn-left">Remove</a>
+	</div>
+	<ul id="playlistlist" data-role="listview">
+	</ul>
+	<div data-role="footer" id="playtools" data-tap-toggle="false" data-position="fixed">
+	<ul class="playtools" data-role="controlgroup" data-type="horizontal">
+	<li><a href="#" data-role="button" class="shuffle" data-fn="pl_random">Shuffle</a></li>
+	<li><a href="#" data-role="button" class="repeat" data-fn="pl_repeat" class="noborder">Repeat</a></li>
+	<li><a href="#" data-role="button" class="loop" data-fn="pl_loop">Loop</a></li>
+	</ul>
+	</div>
+</div>
+<div class="directorylist">
+
+</div>
+<div data-role="footer" id="mediaplayer" data-tap-toggle="false" data-position="fixed">
+<div class="mediaart"><img src=""/></div>
+<div class="songname"></div><div class="artistdetails"></div>
+</div>
+</div>
+<div data-role="page" id="nowplaying">
+<div data-role="header" data-position="fixed">
+<div class="playercontrols">
+<div class="controlsinner">
+<div class="controlsdiv">
+<div class="prev" data-fn="previous"></div><div class="stop" data-fn="stop"></div><div class="play" data-fn="pause"></div><div class="next" data-fn="next"></div>
+</div>
+</div>
+</div>
+</div>
+<img class="coverpage"/>
+<div data-role="footer" data-tap-toggle="false" data-position="fixed" class="seekfooter">
+<div class="seekbarwrapper"><div class="seektime">00:00</div><input data-mini="true" readonly="readonly" data-highlight="true" value="0" min="0" max="100" type="range" id="seekbar"/></div>
+<div>
+</div>
+</body>
+</html>
